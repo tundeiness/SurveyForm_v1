@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form I</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="jumbotron">
+            <h1 id="title">Survey Form</h1>
+        </div>
+        <p id="description">How can we improve our services? We value your feedback <br> so thank you for taking your time</p>
+
+        <form action="" id="survey-form">
+            <div class="row" id="eins">
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2" id="prebio"></div>
+                <div class="col-md-6 col-lg-6" id="biodata">
+                    <fieldset>
+                        <legend>Biodata</legend>
+                        <p><i>Parts marked  with '*'  are compulsory!</i></p>
+                        <label for="salutation">Salutation :</label>
+                        <select id="dropdown">
+                          <option>Mr</option>
+                          <option>Miss</option>
+                          <option>Mrs</option>
+                          <option>Dr</option>
+                          <option>Prof</option>
+                          <option>Engr</option>
+                          <option>Surv</option>
+                          <option>Chief</option>
+                      </select><br>
+                        <label for="name" id="name-label">*Name :</label>
+                        <input type="text" id="name" name="name" value="Enter your name" placeholder="Enter your name" required><br>
+
+                        <label for="email" id="email-label">*Email :</label>
+                        <input type="email" id="email" name="email" value="Enter your email" placeholder="Enter your email" required><br>
+
+                        <label for="age" id="number-label"> Age :</label>
+                        <input type="number" id="number" name="age" value="Age" min="1" max="100" placeholder="Age">
+                    </fieldset>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+            </div>
+
+            <div class="row" id="zwei">
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2" id="prerating"></div>
+                <div class="col-md-6 col-lg-6" id="rating">
+                    <fieldset>
+                        <legend>How satisfied are you with our services</legend>
+                        <input id="vs" type="radio" name="levels" value="vs">
+                        <label for="vs">Very Satisfied</label><br>
+
+                        <input id="ss" type="radio" name="levels" value="ss">
+                        <label for="ss">Somewhat Satisfied</label><br>
+
+                        <input id="ud" type="radio" name="levels" value="ud">
+                        <label for="ud">Undecided</label><br>
+
+                        <input id="us" type="radio" name="levels" value="us">
+                        <label for="us">Unsatisfied</label><br>
+
+                        <input id="vu" type="radio" name="levels" value="vu">
+                        <label for="vu">Very Unsatisfied</label>
+                    </fieldset>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+            </div>
+
+            <div class="row" id="drei">
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2" id="preimprove"></div>
+                <div class="col-md-6 col-lg-6" id="improve">
+                    <fieldset>
+                        <legend>Which services would you like us to improve on?</legend>
+                        <input id="cw" type="checkbox" name="levels" value="cw">
+                        <label for="cw">Car Wash</label><br>
+
+                        <input id="ly" type="checkbox" name="levels" value="ly">
+                        <label for="ly">Laundry</label><br>
+
+                        <input id="uw" type="checkbox" name="levels" value="uw">
+                        <label for="uw">Upholstery Wash</label><br>
+
+                        <input id="dw" type="checkbox" name="levels" value="dw">
+                        <label for="dw">Dish Wash</label><br>
+
+                        <input id="tw" type="checkbox" name="levels" value="tw">
+                        <label for="tw">Toy Wash</label>
+                    </fieldset>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+            </div>
+
+            <div class="row" id="vier">
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2" id="precomm"></div>
+                <div class="col-md-5 col-lg-5" id="comments">
+                    <fieldset>
+                        <legend>Comments/Suggestions</legend>
+                        <textarea name="message" rows="5" cols="42">
+                      </textarea>
+                    </fieldset>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-2"></div>
+            </div><br><br>
+            <div id="sub">
+                <input type="submit" name="submit" value="Submit" id="submit">
+            </div><br><br>
+        </form>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
